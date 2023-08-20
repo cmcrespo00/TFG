@@ -20,7 +20,7 @@ camera = PiCamera()
 host = 'medidasclimaticas.ctpm25au8ifw.eu-west-1.rds.amazonaws.com'
 port = 3306  		# El puerto de Mysql es 3306
 user = 'admin'
-password = '12345678'
+password = '********'
 database = 'datos_alertas'
 
 # Conectarse a la base de datos
@@ -52,8 +52,8 @@ conn.commit()
 
 
 # Credenciales de acceso de AWS
-aws_access_key_id = 'AKIAUGKOWWVTDJAX4BUE'
-aws_secret_access_key = '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'
+aws_access_key_id = '*********'
+aws_secret_access_key = '********'
 
 # Crear una instancia para S3
 s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)

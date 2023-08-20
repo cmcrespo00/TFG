@@ -9,7 +9,7 @@ ser = serial.Serial("/dev/ttyACM0",9600)
 host = 'medidasclimaticas.ctpm25au8ifw.eu-west-1.rds.amazonaws.com'
 port = 3306  		# El puerto de Mysql es 3306
 user = 'admin'
-password = '12345678'
+password = '********'
 database = 'datos_sensor'
 
 # Conectarse a la base de datos
