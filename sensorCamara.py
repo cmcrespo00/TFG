@@ -52,8 +52,8 @@ conn.commit()
 
 
 # Credenciales de acceso de AWS
-aws_access_key_id = '*********'
-aws_secret_access_key = '********'
+aws_access_key_id = '********************'
+aws_secret_access_key = '****************************************'
 
 # Crear una instancia para S3
 s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
@@ -105,9 +105,10 @@ try:
 			cursor.execute("INSERT INTO capturas (fecha, nombre_captura, id_video) VALUES (%s, %s, %s)", (fecha, ruta_captura, id_video))
 			conn.commit()
 		
-			print("Video guardado")
+			print("     %s" % fecha)
+			print("     Video y captura guardados")
 		else:
-			print("Sin movimiento")
+			print("No se ha detectado movimiento.")
 			
 		#Espera 10 segundo.
 		time.sleep(10)
