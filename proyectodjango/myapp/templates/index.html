@@ -1,0 +1,22 @@
+{% extends 'layout/base.html' %}
+
+
+{% load static %}
+{% block contenido %}
+    <section id="informacion_apartado">
+        <article id="portada">
+            <a href="{% url 'alertas' %}"><button id="alertas" type="submit" name="alertas" formaction="alertas.html">
+                <h1>Alertas</h1>
+                <img src="{% static 'alerta.png' %}">
+            </button></a>
+            <a href="{% url 'temperatura' %}"><button id="temperaturas" type="submit" name="temperaturas" formaction="temperaturas.html">
+                <h1>Temperatura</h1>
+                <img src="{% static 'termometro.png' %}">
+            </button></a>
+            <a href="{% url 'humedad' %}"><button id="humedad" type="submit" name="humedad" formaction="humedad.html">
+                <h1>Humedad</h1>
+                <img src="{% static 'humedad.png' %}">
+            </button></a>
+        </article>
+    </section>
+{% endblock %}

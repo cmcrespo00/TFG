@@ -1,0 +1,42 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <title>ClimateEye</title>
+        <meta charset = "UTF-8" />
+		<link rel = "stylesheet" type = "text/css" href = "{% static 'css/style.css' %}" />
+    </head>
+    <body>
+        <header id="cabecera">
+            <section class = "imagen_logo">
+                <a href="{% url 'principal' %}"><img class="logo" src="{% static 'logo.png' %}"></a>
+            </section>
+            
+            <section class="titulo">
+                <h1>ClimateEye</h1>
+            </section>
+        </header>
+        
+        <!-- ************************************* -->
+        
+        <main id="cuerpo">
+            <nav id="barra">
+                <section>
+                    <a href="{% url 'perfil' %}">     <img src="{% static 'perfil.png' %}"></a>
+                    <a href="{% url 'alertas' %}">    <img src="{% static 'alertaBN.png' %}"></a>
+                    <a href="{% url 'temperatura' %}"><img src="{% static 'termometroBN.png' %}"></a>
+                    <a href="{% url 'humedad' %}">    <img src="{% static 'humedadBN.png' %}"></a>
+                </section>
+            </nav>
+
+            {% block contenido %}
+            {% endblock %}
+        </main>
+        
+        <!-- ************************************* -->
+        
+        <footer id="pie">
+            <a href="{% url 'quienessomos' %}">Quienes somos</a> - <a href="{% url 'privacidad' %}">Política de privacidad</a>.
+        </footer>
+    </body>
+</html>

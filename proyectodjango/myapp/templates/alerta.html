@@ -1,0 +1,39 @@
+{% extends 'layout/base.html' %}
+
+{% block contenido %}
+<section id="informacion_apartado">
+    <h1 id="subtitulo">Alertas de movimiento</h1>
+
+    <article id="lista_medidas">
+        <table id="tabla_medidas">
+            <tr><th>
+                <h1 id="historial">Historial</h1>
+            </th></tr>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+            </tr>
+            {% for alerta in datos_alertas reversed %}
+            <tr>
+                <td><a href="{% url 'alertas' %}{{ alerta.0 }}/">{{ alerta.0 }}</a></td>
+                <td><a href="{% url 'alertas' %}{{ alerta.0 }}/">{{ alerta.1 }}</a></td>
+            </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="2">No hay datos disponibles.</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </article>
+    
+    <article id="pruebas_alerta">
+        <h1>Alerta detectada: {{ fecha_alerta }}</h1>
+        
+        <video controls>
+            <source src="{{ video_alerta_url }}" type="video/h264">
+        </video>
+         <br>
+        <img src="{{ captura_alerta_url }}" alt="Captura de pantalla">
+    </article>
+</section>
+{% endblock %}

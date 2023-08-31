@@ -1,0 +1,40 @@
+{% extends 'layout/base.html' %}
+
+{% block contenido %}
+<section id="informacion_apartado">
+    <h1 id="subtitulo">Temperatura</h1>
+
+    <article id="lista_medidas">
+        <table id="tabla_medidas">
+            <tr><th></th><th>
+                <h1>Historial</h1>
+            </th><th></th></tr>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Temperatura</th>
+            </tr>
+            {% for medida in datos_sensor reversed %}
+                <tr>
+                    <td>{{ medida.0 }}</td>
+                    <td>{{ medida.1 }}</td>
+                    <td>{{ medida.2 }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="3">No hay datos disponibles.</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </article>
+
+    <article id="botones">
+        <h1>Pulsa para ajustar la temperatura del local:</h1>
+        <button id="boton" type="submit" name="Reducir">Encender aire acondicionado</button>
+         <br>
+        <button id="boton" type="submit" name="Aumentar">Encender calefacción</button>
+    </article>
+
+</section>
+
+{% endblock %}
