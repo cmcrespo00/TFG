@@ -1,225 +1,239 @@
 /******************************************CABECERA******************************************/
 #cabecera{
-    top: 0;
-    left: 0;
-    position: fixed;
-    align-items: center;
-    height: 10%;
-    width: -webkit-fill-available;
-    background-color: rgb(182, 232, 251);
-    padding: 0%;
-  }
-    
-  #cabecera .logo {
-    float: right;
-    width: 100px;
-    height: -webkit-fill-available;
-    padding: 0% 7%;
-  }
-    
-  #cabecera .titulo{
-    color: rgb(53, 94, 147);
-    font-weight: bold;
-    text-decoration: underline;
-    text-align: center;
-    align-items: center;
-    font-size: 150%;
-    padding: 1% 25%;
-  }
-  /*******************************************CUERPO*******************************************/
-  #cuerpo{
-    top: 10%;
-    left: 0;
-    position: fixed;
-    align-items: center;
-    height: 85%;
-    width: -webkit-fill-available;
-    background-color: rgb(232, 247, 254);
-    padding: 0%;
-  }
+  top: 0;
+  left: 0;
+  position: fixed;
+  align-items: center;
+  height: 10%;
+  width: -webkit-fill-available;
+  background-color: rgb(182, 232, 251);
+  padding: 0%;
+}
   
+#cabecera .logo {
+  float: right;
+  width: 100px;
+  height: -webkit-fill-available;
+  padding: 0% 7%;
+}
   
-        /**********************************BARRA LATERAL*********************************/
-  #barra {
-    left: 0;
-    width: 5%;
-    height: 85%;
-    position: fixed;
-    overflow: hidden;
-    background-color: rgb(53, 94, 147);
-    list-style: none;
-  }
+#cabecera .titulo{
+  color: rgb(53, 94, 147);
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  align-items: center;
+  font-size: 150%;
+  padding: 1% 25%;
+}
+
+
+/*******************************************CUERPO*******************************************/
+#cuerpo{
+  top: 10%;
+  left: 0;
+  position: fixed;
+  align-items: center;
+  height: 85%;
+  width: -webkit-fill-available;
+  background-color: rgb(232, 247, 254);
+  padding: 0%;
+}
+
+
+      /**********************************BARRA LATERAL*********************************/
+#barra {
+  left: 0;
+  width: 5%;
+  height: 85%;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgb(53, 94, 147);
+  list-style: none;
+}
+
+#barra section{
+  margin-top: 30%;
+  margin-left: 5%;
+}
   
-  #barra section{
-    margin-top: 30%;
-    margin-left: 5%;
-  }
-    
-  #barra img{
-    margin-top: 40%;
-    margin-bottom: 40%;
-    width: 90%;
-    height: 10%;
-  }
-  
-        /******************************INFORMACION APARTADO******************************/
-  #informacion_apartado {
-    margin-left: 10%;
-    width: 90%;
-    height: 85%;
-    position: fixed;
-    overflow: hidden;
-    list-style: none;
-  }
-  
-  #portada button{
-    margin-top: 5%;
-    width: 30%;
-    height: 600px;
-    background-color: rgb(232, 247, 254);
-    color: rgb(53, 94, 147);
-    border-color: rgb(182, 232, 251);
-    border-width: 5px;
-    border-radius: 2pc;
-    font-size: 120%;
-  }
-  
-  
-    
-  #portada img{
-    width: 50%;
-    height: 50%;
-  }
-  
-  #subtitulo{
-    color: rgb(53, 94, 147);
-    font-weight: bold;
-    text-decoration: underline;
-    text-align: center;
-    align-items: center;
-    font-size: 150%;
-    padding: 1% 25%;
-  }
-  
-  #lista_medidas{
-    margin-left: 5%;
-    float: left;
-    width: 45%;
-    height: 85%;
-    text-align: center;
-  }
-  
-  #lista_medidas p, #lista_medidas a{
-    color: rgb(0, 0, 0);
-  }
-  
-  
-  table{
-    width: 90%;
-    text-align: center;
-    border-collapse: collapse;
-    margin: 0 0;
-    font-family: sans-serif;
-    min-width: 450px;
-    caption-side:top;
-  }
-  
-  
-  table tbody tr:first-of-type {
-      border-bottom: 4px solid rgb(53, 94, 147);
-  }
-  
-  table tbody tr {
-      border-bottom: 1px solid rgb(182, 232, 251);
-  }
-  
-  table tbody tr:last-of-type {
-      border-bottom: 4px solid rgb(53, 94, 147);
-  }
-  
-  #historial{
-      text-align: right;
-  }
-  
-  #botones{
-    margin-top: 10%;
-    float: right;
-    width: 45%;
-    height: 50%;
-    text-align: center;
-    align-items: center;
-  }
-    
-  #boton{
-    margin-bottom: 5%;
-    padding: 2% 10%;
-    cursor: pointer;
-    background: rgb(53, 94, 147);
-    color: rgb(182, 232, 251);
-    border: black;
-    border-radius: 30pc;
-    width: auto;
-    font-size: 120%;
-  }
-  
-  #pruebas_alerta{
-    float: right;
-    width: 45%;
-    height: 50%;
-    text-align: center;
-    align-items: center;
-  }
-  
-  #pruebas_alerta video{
-    margin-top: 10%;
-  }
-  
-  #pruebas_alerta img{
-    margin-top: 10%;
-    width: 50%;
-  }
-  
-  #informacion_privacidad{
-    margin-left: 10%;
-    width: 85%;
-    height: 85%;
-    position: fixed;
-    overflow: hidden;
-    list-style: none;
-  }
-  
-  #datos_contacto{
+#barra img{
+  margin-top: 40%;
+  margin-bottom: 40%;
+  width: 90%;
+  height: 10%;
+}
+
+      /******************************INFORMACION APARTADO******************************/
+#informacion_apartado {
+  margin-left: 10%;
+  width: 90%;
+  height: 85%;
+  position: fixed;
+  overflow: hidden;
+  list-style: none;
+}
+
+#portada button{
+  margin-top: 5%;
+  width: 30%;
+  height: 600px;
+  background-color: rgb(232, 247, 254);
+  color: rgb(53, 94, 147);
+  border-color: rgb(182, 232, 251);
+  border-width: 5px;
+  border-radius: 2pc;
+  font-size: 120%;
+}
+
+#portada img{
+  width: 50%;
+  height: 50%;
+}
+
+#subtitulo{
+  color: rgb(53, 94, 147);
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  align-items: center;
+  font-size: 150%;
+  padding: 1% 25%;
+}
+
+#lista_medidas{
+  margin-left: 5%;
+  float: left;
+  width: 45%;
+  height: 85%;
+  text-align: center;
+}
+
+#lista_medidas p, #lista_medidas a{
+  color: rgb(0, 0, 0);
+}
+
+table{
+  width: 90%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 0;
+  font-family: sans-serif;
+  min-width: 450px;
+  caption-side:top;
+}
+
+table tbody tr:first-of-type {
+    border-bottom: 4px solid rgb(53, 94, 147);
+}
+
+table tbody tr {
+    border-bottom: 1px solid rgb(182, 232, 251);
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 4px solid rgb(53, 94, 147);
+}
+
+#historial{
     text-align: right;
-  }
+}
+
+#botones{
+  margin-top: 10%;
+  float: right;
+  width: 45%;
+  height: 50%;
+  text-align: center;
+  align-items: center;
+}
   
+#boton{
+  margin-bottom: 5%;
+  padding: 2% 10%;
+  cursor: pointer;
+  background: rgb(53, 94, 147);
+  color: rgb(182, 232, 251);
+  border: black;
+  border-radius: 30pc;
+  width: auto;
+  font-size: 120%;
+}
+
+#pruebas_alerta{
+  float: right;
+  width: 45%;
+  height: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+#pruebas_alerta video{
+  margin-top: 10%;
+}
+
+#pruebas_alerta img{
+  margin-top: 10%;
+  width: 65%;
+}
+
+#informacion_privacidad{
+  margin-left: 10%;
+  width: 85%;
+  height: 85%;
+  position: fixed;
+  overflow: hidden;
+  list-style: none;
+}
+
+#datos_contacto{
+  text-align: right;
+}
+
+
+#informacion_quienes_somos{
+  margin-left: 20%;
+  width: 65%;
+  height: 85%;
+  position: fixed;
+  overflow: hidden;
+  list-style: none;
+}
+
+#foto_perfil {
+  margin-left: 20%;
+  width: 20%;
+  height: 50%;
+}
+
+#datos_perfil {
+  float: right;
+  margin-top: 5%;
+  margin-right: 5%;
+  width: 45%;
+  height: 50%;
+  text-align: left;
+  align-items: center;
+  font-size: 120%;
+}
+
+
+/****************************************PIE DE PÁGINA***************************************/
+#pie {
+  left: 0;
+  bottom: 0px;
+  position: fixed;
+  display: inline-block;
+  align-items: center;
+  width: -webkit-fill-available;
+  text-align: center;
+  background-color: rgb(182, 232, 251);
+  height: 5%;
+  z-index: 30;
+  color: rgb(53, 94, 147);
+}
   
-  #informacion_quienes_somos{
-    margin-left: 20%;
-    width: 65%;
-    height: 85%;
-    position: fixed;
-    overflow: hidden;
-    list-style: none;
-  }
+#pie p, #pie a{
+  color: rgb(53, 94, 147);
+}
   
-  
-  
-  /****************************************PIE DE PÁGINA***************************************/
-  #pie {
-    left: 0;
-    bottom: 0px;
-    position: fixed;
-    display: inline-block;
-    align-items: center;
-    width: -webkit-fill-available;
-    text-align: center;
-    background-color: rgb(182, 232, 251);
-    height: 5%;
-    z-index: 30;
-    color: rgb(53, 94, 147);
-  }
-    
-  #pie p, #pie a{
-    color: rgb(53, 94, 147);
-  }
-    

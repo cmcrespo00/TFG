@@ -1,6 +1,19 @@
 {% extends 'layout/base.html' %}
 
+{% load static %}
 {% block contenido %}
-    
-
+    <section id="informacion_apartado">
+        <h1 id="subtitulo">Perfil</h1>
+        
+        <img id="foto_perfil" src="{% static 'imagen_perfil.PNG' %}">
+        
+        <p id="datos_perfil">
+            Nombre: Cristina<br><br>
+            Apellidos: Crespo<br><br>
+            Ubicación del sistema: Salón<br><br>
+            Dirección: Calle Carpa Nº8 2ºA, 18015, Granada, España<br><br>
+            Teléfono: 691054091<br><br>
+            Correo: cristina@gmail.com
+        </p> 
+    </section>
 {% endblock %}
