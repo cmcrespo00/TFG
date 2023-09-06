@@ -29,11 +29,11 @@
     <article id="pruebas_alerta">
         <h1>Alerta detectada: {{ fecha_alerta }}</h1>
         
-        <video controls>
-            <source src="{{ video_alerta_url }}" type="video/h264">
+        <video controls style="width: 50%; height: auto;">
+            <source src="{{ video_alerta_url }}" type="video/mp4">
         </video>
          <br>
-        <img src="{{ captura_alerta_url }}" alt="Captura de pantalla">
+        <img style="width: 50%; height: auto;" src="{{ captura_alerta_url }}" alt="Captura de pantalla">
     </article>
 </section>
 {% endblock %}

@@ -168,15 +168,6 @@ table tbody tr:last-of-type {
   align-items: center;
 }
 
-#pruebas_alerta video{
-  margin-top: 10%;
-}
-
-#pruebas_alerta img{
-  margin-top: 10%;
-  width: 65%;
-}
-
 #informacion_privacidad{
   margin-left: 10%;
   width: 85%;
